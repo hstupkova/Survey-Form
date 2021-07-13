@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 id="title" class="title">The Queen's Thief Fandom Survey</h1>
+      <p id="description">
+        Hello, fans of the book series The Queen's Thief! We would like to ask
+        you few questions about your experience with the books. Thank you for
+        your answers ❤
+      </p>
+      <form id="survey-form">
+        <div class="form-field">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="your name"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="email" id="email-label">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@address.com"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="number" id="number-label"
+            >How old were you when you first read The Thief (or any book in the
+            series that you read first)?</label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="1"
+            max="99"
+            placeholder="your age"
+          />
+        </div>
+        <div class="form-field">
+          <label for="dropdown"
+            >What language did you read your books in?</label
+          >
+          <select name="dropdown" id="dropdown">
+            <option value="English">English</option>
+            <option value="Estonian">Estonian</option>
+            <option value="German">German</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Polish">Polish</option>
+            <option value="Romanian">Romanian</option>
+            <option value="Thai">Thai</option>
+            <option value="Turkish">Turkish</option>
+            <option value="other">
+              other (please specify in the comments)
+            </option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Which book is your favorite:</legend>
+          <div class="form-field-row">
+            <input id="book1" type="radio" name="books" value="1" />
+            <label for="book1">The Thief</label>
+          </div>
+          <div class="form-field-row">
+            <input id="book2" type="radio" name="books" value="2" />
+            <label for="book2">The Queen of Attolia</label>
+          </div>
+          <div class="form-field-row">
+            <input id="book3" type="radio" name="books" value="3" />
+            <label for="book3">The King of Attolia</label>
+          </div>
+          <div class="form-field-row">
+            <input id="book4" type="radio" name="books" value="4" />
+            <label for="book4">A Conspiracy of Kings</label>
+          </div>
+          <div class="form-field-row">
+            <input id="book5" type="radio" name="books" value="5" />
+            <label for="book5">Thick as Thieves</label>
+          </div>
+          <div class="form-field-row">
+            <input id="book6" type="radio" name="books" value="6" />
+            <label for="book6">Return of the Thief</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>What type of book did you read?</legend>
+          <div class="form-field-row">
+            <input type="checkbox" id="type1" name="types" value="Hardback" />
+            <label for="type1">Hardback</label>
+          </div>
+          <div class="form-field-row">
+            <input type="checkbox" id="type2" name="types" value="Paperback" />
+            <label for="type2">Paperback</label>
+          </div>
+          <div class="form-field-row">
+            <input type="checkbox" id="type3" name="types" value="Ebook" />
+            <label for="type3">Ebook</label>
+          </div>
+          <div class="form-field-row">
+            <input type="checkbox" id="type4" name="types" value="Audiobook" />
+            <label for="type4">Audiobook</label>
+          </div>
+        </fieldset>
+        <div class="form-field last">
+          <label for="textarea">Would you like to tell us more?</label>
+          <textarea id="textarea" name="textarea" class="textarea">
+Additional commentary</textarea
+          >
+        </div>
+        <button type="submit" id="submit" class="btn">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
